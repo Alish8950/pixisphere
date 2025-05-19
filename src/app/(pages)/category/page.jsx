@@ -248,6 +248,30 @@ export default function CategoryListing() {
                   <PhotographerCardSkeleton />
                 </Box>
               ))
+            ) : filteredPhotographers.length === 0 ? (
+              // Show Not Found UI when no photographers match the filters
+              <Box className="col-span-full flex flex-col items-center justify-center py-12">
+                <Typography variant="h5" className="text-gray-600 mb-4">
+                  No photographers found
+                </Typography>
+                <Typography variant="body1" className="text-gray-500 text-center mb-6">
+                  Try adjusting your filters or search criteria to find what you're looking for
+                </Typography>
+                <Button
+                  variant="contained"
+                  onClick={() => {
+                    setSearchTerm("");
+                    setSelectedCategory("all");
+                    setSelectedCity("all");
+                    setSelectedRating(0);
+                    setSortBy("recent");
+                    setPriceRange([0, 30000]);
+                  }}
+                  className="bg-blue-600 hover:bg-blue-700"
+                >
+                  Reset Filters
+                </Button>
+              </Box>
             ) : (
               // Show actual photographer cards
               filteredPhotographers

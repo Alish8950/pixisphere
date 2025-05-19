@@ -8,10 +8,11 @@ const PhotographerCard = ({ photographer }) => {
     <Card className="w-full h-full flex flex-col transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
       <CardMedia
         component="img"
-        height="200"
+        height="240"
+        width="100%"
         image={photographer.profilePic}
         alt={photographer.name}
-        className="object-cover"
+        className="object-cover aspect-[4/3]"
       />
       <CardContent className="flex-grow">
         <Typography variant="h5" className="font-bold mb-1">
