@@ -1,77 +1,98 @@
 # PixiSphere - Photographer Booking Platform
 
-PixiSphere is a modern web application for booking photographers, built with Next.js and Material-UI. The platform allows users to browse, filter, and book photographers based on various criteria.
+A modern web application for booking photographers, built with Next.js and Material-UI.
 
-## Setup Instructions
+## Features
 
-1. **Clone the repository**
-   ```bash
-   git clone [repository-url]
-   cd pixisphere
-   ```
+- Browse photographers by category and location
+- View detailed photographer profiles
+- Portfolio gallery with image navigation
+- Send inquiries to photographers
+- Review system
+- Responsive design
+- Modern UI with Material-UI components
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+## Getting Started
 
-3. **Set up environment variables**
-   Create a `.env.local` file in the root directory and add necessary environment variables:
-   ```
-   NEXT_PUBLIC_API_URL=your_api_url
-   ```
+### Prerequisites
 
-4. **Run the development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
+- Node.js (v14 or higher)
+- npm or yarn
 
-5. **Open the application**
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
+### Installation
 
-## Technical Implementation Notes
-
-### Filtering System
-The application implements a comprehensive filtering system that includes:
-- Category-based filtering
-- Location-based filtering
-- Price range filtering
-- Rating-based filtering
-- Search functionality with fuzzy matching
-
-### Debounce Implementation
-The application uses debouncing for performance optimization in two key areas:
-1. **Search Input**: Implements a 500ms debounce to prevent excessive API calls while typing
-2. **Price Range Slider**: Uses debouncing to prevent rapid state updates during slider movement
-
-```javascript
-// Custom debounce hook implementation
-const useDebounce = (value, delay) => {
-  const [debouncedValue, setDebouncedValue] = useState(value);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setDebouncedValue(value);
-    }, delay);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [value, delay]);
-
-  return debouncedValue;
-};
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/pixisphere.git
+cd pixisphere
 ```
 
-### Search Logic
-The application uses Fuse.js for fuzzy search implementation:
-- Searches across photographer names and locations
-- Configurable search threshold (currently set to 0.3)
-- Includes score-based result ranking
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the JSON server for the database:
+```bash
+npx json-server --watch db.json --port 3001
+```
+
+4. In a new terminal, start the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── (pages)/
+│   │   ├── category/
+│   │   │   └── page.jsx
+│   │   └── photographer/
+│   │       └── [id]/
+│   │           └── page.jsx
+├── components/
+│   ├── modals/
+│   │   ├── QueryModal.jsx
+│   │   └── GalleryModal.jsx
+│   ├── PhotographerCard.jsx
+│   ├── ReviewCard.jsx
+│   └── Header.jsx
+├── customHooks/
+│   ├── useDebounce.js
+│   └── useFetch.js
+└── store/
+    └── photographerSlice.js
+```
+
+## Component Architecture
+
+### Modal Components
+The application uses modular modal components for better code organization and reusability:
+
+1. **QueryModal**
+   - Handles photographer inquiry form
+   - Features:
+     - Contact information input
+     - Event details selection
+     - Package selection
+     - Message composition
+
+2. **GalleryModal**
+   - Displays photographer's portfolio
+   - Features:
+     - Full-screen image view
+     - Image navigation
+     - Image counter
+     - Responsive design
 
 ### Image Handling
 - Consistent image dimensions across the platform
@@ -84,28 +105,13 @@ The application uses Fuse.js for fuzzy search implementation:
 - Local state for UI components
 - Efficient state updates with proper dependency arrays
 
-## Project Structure
-```
-src/
-├── app/
-│   ├── (pages)/
-│   │   └── category/
-│   │       └── page.jsx
-├── components/
-│   ├── PhotographerCard.jsx
-│   └── Header.jsx
-├── customHooks/
-│   └── useDebounce.js
-└── store/
-    └── photographerSlice.js
-```
-
 ## Technologies Used
 - Next.js 13+ (App Router)
 - Material-UI
 - Redux Toolkit
 - Fuse.js
 - Tailwind CSS
+- JSON Server (for development database)
 
 ## Contributing
 1. Fork the repository

@@ -11,21 +11,13 @@ import {
   Tabs,
   Tab,
   Rating,
-  Modal,
-  IconButton,
   Box,
-  TextField,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
 } from "@mui/material";
 import ReviewCard from "../../../../components/ReviewCard";
 import { useSelector } from "react-redux";
-import CloseIcon from "@mui/icons-material/Close";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
+import QueryModal from "../../../../components/modals/QueryModal";
+import GalleryModal from "../../../../components/modals/GalleryModal";
 
 export default function PhotographerProfile() {
   const { photographers, loading } = useSelector((state) => state.photographer);
@@ -51,7 +43,7 @@ export default function PhotographerProfile() {
     setShowGallery(true);
   };
 
-  const handleCloseModal = () => {
+  const handleCloseGallery = () => {
     setShowGallery(false);
     setSelectedImageIndex(null);
   };
@@ -366,168 +358,24 @@ export default function PhotographerProfile() {
       )}
 
       {/* Query Modal */}
-      <Modal
+      <QueryModal
         open={showQueryModal}
         onClose={handleCloseQueryModal}
-        className="flex items-center justify-center"
-      >
-        <Box className="bg-white rounded-xl p-6 w-full max-w-2xl mx-4">
-          <Box className="flex justify-between items-center mb-6">
-            <Typography variant="h5" className="font-bold text-gray-800">
-              Send Inquiry to {photographer.name}
-            </Typography>
-            <IconButton onClick={handleCloseQueryModal}>
-              <CloseIcon />
-            </IconButton>
-          </Box>
+        photographer={photographer}
+        onSubmit={handleQuerySubmit}
+        formData={queryData}
+        onInputChange={handleInputChange}
+      />
 
-          <form onSubmit={handleQuerySubmit} className="space-y-4">
-            <Box className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <TextField
-                fullWidth
-                label="Your Name"
-                name="name"
-                value={queryData.name}
-                onChange={handleInputChange}
-                required
-              />
-              <TextField
-                fullWidth
-                label="Email"
-                name="email"
-                type="email"
-                value={queryData.email}
-                onChange={handleInputChange}
-                required
-              />
-              <TextField
-                fullWidth
-                label="Phone Number"
-                name="phone"
-                value={queryData.phone}
-                onChange={handleInputChange}
-                required
-              />
-              <TextField
-                fullWidth
-                label="Event Date"
-                name="eventDate"
-                type="date"
-                value={queryData.eventDate}
-                onChange={handleInputChange}
-                InputLabelProps={{ shrink: true }}
-                required
-              />
-              <FormControl fullWidth required>
-                <InputLabel>Event Type</InputLabel>
-                <Select
-                  name="eventType"
-                  value={queryData.eventType}
-                  onChange={handleInputChange}
-                  label="Event Type"
-                >
-                  <MenuItem value="wedding">Wedding</MenuItem>
-                  <MenuItem value="maternity">Maternity</MenuItem>
-                  <MenuItem value="family">Family</MenuItem>
-                  <MenuItem value="portrait">Portrait</MenuItem>
-                  <MenuItem value="other">Other</MenuItem>
-                </Select>
-              </FormControl>
-              <FormControl fullWidth required>
-                <InputLabel>Package</InputLabel>
-                <Select
-                  name="package"
-                  value={queryData.package}
-                  onChange={handleInputChange}
-                  label="Package"
-                >
-                  <MenuItem value="basic">Basic Package</MenuItem>
-                  <MenuItem value="standard">Standard Package</MenuItem>
-                  <MenuItem value="premium">Premium Package</MenuItem>
-                </Select>
-              </FormControl>
-              <Box className="col-span-2">
-                <TextField
-                  fullWidth
-                  label="Message"
-                  name="message"
-                  multiline
-                  rows={4}
-                  value={queryData.message}
-                  onChange={handleInputChange}
-                  required
-                />
-              </Box>
-            </Box>
-
-            <Box className="flex justify-end mt-6 gap-4">
-              <Button
-                variant="outlined"
-                onClick={handleCloseQueryModal}
-                className="mr-2 border-purple-600 text-purple-600 hover:bg-purple-50"
-              >
-                Cancel
-              </Button>
-              <Button
-                type="submit"
-                variant="contained"
-                className="bg-purple-600 hover:bg-purple-700"
-              >
-                Send Inquiry
-              </Button>
-            </Box>
-          </form>
-        </Box>
-      </Modal>
-
-      {/* Full Gallery Modal */}
-      <Modal
+      {/* Gallery Modal */}
+      <GalleryModal
         open={showGallery}
-        onClose={handleCloseModal}
-        className="flex items-center justify-center"
-      >
-        <Box className="bg-white bg-opacity-95 w-full h-full flex flex-col">
-          {/* Top Bar */}
-          <Box className="flex justify-between items-center p-4">
-            <IconButton
-              onClick={handleCloseModal}
-              className="text-white hover:bg-white hover:bg-opacity-10"
-            >
-              <CloseIcon />
-            </IconButton>
-            <Typography className="text-white">
-              {selectedImageIndex + 1} / {photographer.portfolio.length}
-            </Typography>
-          </Box>
-
-          {/* Main Image */}
-          <Box className="flex-1 flex items-center justify-center">
-            {selectedImageIndex !== null && (
-              <img
-                src={photographer.portfolio[selectedImageIndex]}
-                alt="Portfolio"
-                className="max-h-[calc(100vh-100px)] max-w-[90vw] object-contain"
-              />
-            )}
-          </Box>
-
-          {/* Navigation */}
-          <Box className="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-4 pointer-events-none">
-            <IconButton
-              onClick={handlePreviousImage}
-              className="text-white hover:bg-white hover:bg-opacity-10 pointer-events-auto"
-            >
-              <ArrowBackIosNewIcon />
-            </IconButton>
-            <IconButton
-              onClick={handleNextImage}
-              className="text-white hover:bg-white hover:bg-opacity-10 pointer-events-auto"
-            >
-              <ArrowForwardIosIcon />
-            </IconButton>
-          </Box>
-        </Box>
-      </Modal>
+        onClose={handleCloseGallery}
+        portfolio={photographer.portfolio}
+        selectedImageIndex={selectedImageIndex}
+        onPrevious={handlePreviousImage}
+        onNext={handleNextImage}
+      />
     </Container>
   );
 }
