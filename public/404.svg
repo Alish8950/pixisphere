@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="800px" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background Circle -->
+        <circle fill="#F3E8FF" cx="400" cy="400" r="300"/>
+        
+        <!-- Broken Camera Lens -->
+        <g transform="translate(200, 200)">
+            <!-- Lens Frame -->
+            <circle fill="#9333EA" cx="200" cy="200" r="150"/>
+            <circle fill="#7E22CE" cx="200" cy="200" r="130"/>
+            <circle fill="#4C1D95" cx="200" cy="200" r="110"/>
+            
+            <!-- Crack Lines -->
+            <path d="M200,50 L200,350" stroke="#E9D5FF" stroke-width="8" stroke-linecap="round"/>
+            <path d="M50,200 L350,200" stroke="#E9D5FF" stroke-width="8" stroke-linecap="round"/>
+            <path d="M100,100 L300,300" stroke="#E9D5FF" stroke-width="8" stroke-linecap="round"/>
+            <path d="M100,300 L300,100" stroke="#E9D5FF" stroke-width="8" stroke-linecap="round"/>
+            
+            <!-- Broken Pieces -->
+            <path d="M200,50 Q250,100 300,150" stroke="#E9D5FF" stroke-width="8" stroke-linecap="round"/>
+            <path d="M200,350 Q250,300 300,250" stroke="#E9D5FF" stroke-width="8" stroke-linecap="round"/>
+            <path d="M50,200 Q100,250 150,300" stroke="#E9D5FF" stroke-width="8" stroke-linecap="round"/>
+            <path d="M350,200 Q300,250 250,300" stroke="#E9D5FF" stroke-width="8" stroke-linecap="round"/>
+        </g>
+        
+        <!-- Decorative Elements -->
+        <circle fill="#9333EA" cx="150" cy="150" r="20" opacity="0.3"/>
+        <circle fill="#9333EA" cx="650" cy="150" r="20" opacity="0.3"/>
+        <circle fill="#9333EA" cx="150" cy="650" r="20" opacity="0.3"/>
+        <circle fill="#9333EA" cx="650" cy="650" r="20" opacity="0.3"/>
+        
+        <!-- Small Dots -->
+        <circle fill="#9333EA" cx="400" cy="100" r="8"/>
+        <circle fill="#9333EA" cx="400" cy="700" r="8"/>
+        <circle fill="#9333EA" cx="100" cy="400" r="8"/>
+        <circle fill="#9333EA" cx="700" cy="400" r="8"/>
+    </g>
+</svg> 

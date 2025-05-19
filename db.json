@@ -1,0 +1,532 @@
+{
+  "photographers": [
+    {
+      "id": 1,
+      "name": "Ravi Studio",
+      "location": "Bengaluru",
+      "price": 10000,
+      "rating": 1.6,
+      "styles": ["Outdoor", "Studio"],
+      "tags": ["Candid", "Maternity"],
+      "category": "Maternity",
+      "bio": "Award-winning studio specializing in maternity and newborn shoots.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Ananya",
+          "rating": 1.4,
+          "comment": "Truly amazing photos and experience!",
+          "date": "2024-12-15"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lens Queen Photography",
+      "location": "Delhi",
+      "price": 15000,
+      "rating": 4.2,
+      "styles": ["Candid", "Indoor"],
+      "tags": ["Newborn", "Birthday"],
+      "category": "Birthday",
+      "bio": "Delhi-based candid specialist for kids and birthday parties.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Priya",
+          "rating": 4,
+          "comment": "Very professional and punctual!",
+          "date": "2024-10-01"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Click Factory",
+      "location": "Mumbai",
+      "price": 8000,
+      "rating": 2.8,
+      "styles": ["Studio", "Outdoor", "Traditional"],
+      "tags": ["Wedding", "Pre-wedding"],
+      "category": "Wedding",
+      "bio": "Capturing timeless wedding stories across India.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Rahul",
+          "rating": 5,
+          "comment": "We loved every single moment they captured.",
+          "date": "2025-01-22"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Moments by Neha",
+      "location": "Bengaluru",
+      "price": 12000,
+      "rating": 4.3,
+      "styles": ["Outdoor", "Candid"],
+      "tags": ["Maternity", "Couple"],
+      "category": "Couple",
+      "bio": "Natural light specialist focusing on emotional storytelling.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Sneha",
+          "rating": 4.5,
+          "comment": "Captured our maternity journey so beautifully.",
+          "date": "2024-11-05"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Snapshot Studio",
+      "location": "Hyderabad",
+      "price": 7000,
+      "rating": 3.9,
+      "styles": ["Studio"],
+      "tags": ["Birthday", "Family"],
+      "category": "Family",
+      "bio": "Affordable indoor shoots with creative themes.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Vikram",
+          "rating": 3.5,
+          "comment": "Decent service, could improve on punctuality.",
+          "date": "2024-09-10"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Lens & Life",
+      "location": "Mumbai",
+      "price": 18000,
+      "rating": 4.7,
+      "styles": ["Outdoor", "Studio", "Artistic"],
+      "tags": ["Maternity", "Wedding", "Premium"],
+      "category": "Premium",
+      "bio": "Award-winning photographer specializing in artistic maternity and wedding photography.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Priya",
+          "rating": 5,
+          "comment": "Absolutely stunning photos! Worth every penny.",
+          "date": "2024-12-15"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Capture Moments",
+      "location": "Delhi",
+      "price": 15000,
+      "rating": 3.5,
+      "styles": ["Outdoor", "Natural Light"],
+      "tags": ["Maternity", "Family", "Candid"],
+      "category": "Family",
+      "bio": "Specializing in natural light photography with a focus on candid moments.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Rahul",
+          "rating": 4.5,
+          "comment": "Great experience and beautiful photos!",
+          "date": "2024-11-20"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Dreamy Shots",
+      "location": "Chennai",
+      "price": 22000,
+      "rating": 4.9,
+      "styles": ["Studio", "Artistic", "Premium"],
+      "tags": ["Maternity", "Wedding", "Luxury"],
+      "category": "Luxury",
+      "bio": "Premium photography studio offering luxury maternity and wedding shoots.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Ananya",
+          "rating": 5,
+          "comment": "Exceptional service and stunning results!",
+          "date": "2024-12-01"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Golden Lens Studio",
+      "location": "Mumbai",
+      "price": 18000,
+      "rating": 4.7,
+      "styles": ["Traditional", "Contemporary", "Artistic"],
+      "tags": ["Wedding", "Pre-wedding", "Couple"],
+      "category": "Couple",
+      "bio": "Creating magical moments for couples with a blend of traditional and modern photography.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Vikram",
+          "rating": 2.7,
+          "comment": "Amazing attention to detail and beautiful compositions!",
+          "date": "2024-12-10"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Elite Photography",
+      "location": "Bengaluru",
+      "price": 25000,
+      "rating": 4.9,
+      "styles": ["Premium", "Luxury", "Artistic"],
+      "tags": ["Wedding", "Maternity", "Family"],
+      "category": "Premium",
+      "bio": "Premium photography services for special moments in life.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Meera",
+          "rating": 5,
+          "comment": "Worth every penny! The quality is exceptional.",
+          "date": "2024-11-25"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Capture Dreams",
+      "location": "Delhi",
+      "price": 15000,
+      "rating": 4.6,
+      "styles": ["Contemporary", "Artistic", "Natural"],
+      "tags": ["Wedding", "Pre-wedding", "Couple"],
+      "category": "Couple",
+      "bio": "Specializing in capturing authentic moments and emotions in wedding photography.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Rahul",
+          "rating": 4.5,
+          "comment": "Excellent work! Captured all special moments perfectly.",
+          "date": "2024-12-15"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Moments Forever",
+      "location": "Mumbai",
+      "price": 12000,
+      "rating": 4.4,
+      "styles": ["Traditional", "Candid", "Natural"],
+      "tags": ["Wedding", "Family", "Portrait"],
+      "category": "Family",
+      "bio": "Creating timeless memories through natural and candid photography.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Priya",
+          "rating": 4.3,
+          "comment": "Very professional and friendly service.",
+          "date": "2024-12-12"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Lens & Life",
+      "location": "Chennai",
+      "price": 20000,
+      "rating": 4.8,
+      "styles": ["Artistic", "Contemporary", "Premium"],
+      "tags": ["Wedding", "Maternity", "Portrait"],
+      "category": "Premium",
+      "bio": "Premium photography services with artistic vision and attention to detail.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Arjun",
+          "rating": 4.9,
+          "comment": "Exceptional quality and creativity in every shot.",
+          "date": "2024-12-08"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Natural Glow",
+      "location": "Bengaluru",
+      "price": 18000,
+      "rating": 4.7,
+      "styles": ["Natural", "Outdoor", "Candid"],
+      "tags": ["Maternity", "Family", "Portrait"],
+      "category": "Maternity",
+      "bio": "Specializing in natural light photography for maternity and family portraits.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Sneha",
+          "rating": 4.6,
+          "comment": "Beautiful maternity photoshoot experience!",
+          "date": "2024-12-05"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Studio 360",
+      "location": "Hyderabad",
+      "price": 22000,
+      "rating": 4.9,
+      "styles": ["Studio", "Artistic", "Premium"],
+      "tags": ["Wedding", "Portrait", "Commercial"],
+      "category": "Premium",
+      "bio": "Professional studio photography with state-of-the-art equipment.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Vikram",
+          "rating": 5,
+          "comment": "Outstanding studio setup and professional service.",
+          "date": "2024-12-01"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Dreamy Shots",
+      "location": "Pune",
+      "price": 16000,
+      "rating": 4.5,
+      "styles": ["Artistic", "Contemporary", "Natural"],
+      "tags": ["Wedding", "Pre-wedding", "Couple"],
+      "category": "Couple",
+      "bio": "Creating dreamy and romantic photography for couples.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Ananya",
+          "rating": 4.4,
+          "comment": "Beautiful pre-wedding photoshoot!",
+          "date": "2024-11-28"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Lens & Life",
+      "location": "Chennai",
+      "price": 14000,
+      "rating": 4.6,
+      "styles": ["Contemporary", "Natural", "Candid"],
+      "tags": ["Wedding", "Portrait", "Family"],
+      "category": "Portrait",
+      "bio": "Specializing in natural and candid portrait photography.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Priya",
+          "rating": 4.7,
+          "comment": "Amazing portrait session!",
+          "date": "2024-12-05"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Capture Moments",
+      "location": "Mumbai",
+      "price": 25000,
+      "rating": 4.8,
+      "styles": ["Wedding", "Traditional", "Contemporary"],
+      "tags": ["Wedding", "Traditional", "Cultural"],
+      "category": "Wedding",
+      "bio": "Capturing traditional and cultural wedding moments.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Rajesh",
+          "rating": 4.9,
+          "comment": "Perfect capture of our wedding traditions!",
+          "date": "2024-12-10"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Natural Glow",
+      "location": "Delhi",
+      "price": 18000,
+      "rating": 4.7,
+      "styles": ["Natural", "Outdoor", "Candid"],
+      "tags": ["Wedding", "Pre-wedding", "Outdoor"],
+      "category": "Pre-wedding",
+      "bio": "Specializing in outdoor pre-wedding photography.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Sneha",
+          "rating": 4.8,
+          "comment": "Beautiful outdoor pre-wedding shoot!",
+          "date": "2024-12-15"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Studio 360",
+      "location": "Kolkata",
+      "price": 12000,
+      "rating": 4.5,
+      "styles": ["Studio", "Portrait", "Commercial"],
+      "tags": ["Portrait", "Commercial", "Product"],
+      "category": "Commercial",
+      "bio": "Professional commercial and product photography studio.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Amit",
+          "rating": 4.6,
+          "comment": "Great product photography!",
+          "date": "2024-12-20"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Dreamy Shots",
+      "location": "Ahmedabad",
+      "price": 15000,
+      "rating": 4.6,
+      "styles": ["Artistic", "Contemporary", "Studio"],
+      "tags": ["Portrait", "Family", "Children"],
+      "category": "Family",
+      "bio": "Creating beautiful family portraits and memories.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Neha",
+          "rating": 4.7,
+          "comment": "Perfect family photos!",
+          "date": "2024-12-25"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Lens & Life",
+      "location": "Jaipur",
+      "price": 20000,
+      "rating": 4.8,
+      "styles": ["Traditional", "Cultural", "Heritage"],
+      "tags": ["Wedding", "Traditional", "Cultural"],
+      "category": "Wedding",
+      "bio": "Specializing in traditional and cultural wedding photography.",
+      "profilePic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+      "portfolio": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxaU9SIVC1AZUv0jJW0WtEs0IgZlw0iiFs-w&s"
+      ],
+      "reviews": [
+        {
+          "name": "Vikram",
+          "rating": 4.9,
+          "comment": "Amazing capture of our traditional wedding!",
+          "date": "2024-12-30"
+        }
+      ]
+    }
+  ]
+}
