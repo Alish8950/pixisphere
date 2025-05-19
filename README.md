@@ -34,10 +34,6 @@ npm install
 yarn install
 ```
 
-3. Start the JSON server for the database:
-```bash
-npx json-server --watch db.json --port 3001
-```
 
 4. In a new terminal, start the development server:
 ```bash
