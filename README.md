@@ -107,7 +107,6 @@ The application uses modular modal components for better code organization and r
 - Redux Toolkit
 - Fuse.js
 - Tailwind CSS
-- JSON Server (for development database)
 
 ## Contributing
 1. Fork the repository
@@ -116,5 +115,3 @@ The application uses modular modal components for better code organization and r
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.

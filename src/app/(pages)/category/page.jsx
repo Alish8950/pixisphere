@@ -18,7 +18,7 @@ import PhotographerCard from "../../../components/PhotographerCard";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import useDebounce from "../../../customHooks/useDebounce";
-import Fuse from 'fuse.js';
+import Fuse from "fuse.js";
 
 export default function CategoryListing() {
   const { photographers, loading } = useSelector((state) => state.photographer);
@@ -35,9 +35,9 @@ export default function CategoryListing() {
   const [filteredPhotographers, setFilteredPhotographers] =
     useState(photographers);
 
-  // Configure Fuse.js options
+  // Configure fuzzy search options
   const fuseOptions = {
-    keys: ['name', 'location'],
+    keys: ["name", "location"],
     threshold: 0.3,
     includeScore: true,
   };
@@ -80,7 +80,7 @@ export default function CategoryListing() {
     if (debouncedSearchTerm) {
       const fuse = new Fuse(filtered, fuseOptions);
       const searchResults = fuse.search(debouncedSearchTerm);
-      filtered = searchResults.map(result => result.item);
+      filtered = searchResults.map((result) => result.item);
     }
 
     // Apply sorting
@@ -186,7 +186,9 @@ export default function CategoryListing() {
               </FormControl>
 
               <Box className="bg-white p-4 rounded-lg">
-                <Typography className="font-medium mb-2">Price Range</Typography>
+                <Typography className="font-medium mb-2">
+                  Price Range
+                </Typography>
                 <Slider
                   value={priceRange}
                   min={0}
@@ -254,8 +256,12 @@ export default function CategoryListing() {
                 <Typography variant="h5" className="text-gray-600 mb-4">
                   No photographers found
                 </Typography>
-                <Typography variant="body1" className="text-gray-500 text-center mb-6">
-                  Try adjusting your filters or search criteria to find what you're looking for
+                <Typography
+                  variant="body1"
+                  className="text-gray-500 text-center mb-6"
+                >
+                  Try adjusting your filters or search criteria to find what
+                  you're looking for
                 </Typography>
                 <Button
                   variant="contained"
